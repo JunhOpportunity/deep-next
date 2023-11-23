@@ -11,5 +11,5 @@
 > 요약 없음
 - [라우트 그룹](https://github.com/JunhOpportunity/deep-next/blob/main/routing/3-route-groups.md)
 > 폴더 이름을 괄호 안에 넣으면 URL 경로에 영향을 주지 않는다.
-- [동적 라우팅](https://github.com/JunhOpportunity/deep-next/blob/main/routing/4-dynamic-routing.md)https://github.com/JunhOpportunity/deep-next/blob/main/routing/4-dynamic-routing.md
+- [동적 라우팅](https://github.com/JunhOpportunity/deep-next/blob/main/routing/4-dynamic-routing.md)
 > 폴더의 이름을 [id] 또는 [slug] 로 선언한 뒤 page.js 파일 생성
