@@ -14,17 +14,17 @@
 > 폴더 이름을 괄호 안에 넣으면 URL 경로에 영향을 주지 않는다.
 - [동적 라우팅](https://github.com/JunhOpportunity/deep-next/blob/main/routing/4-dynamic-routing.md)
 > 폴더의 이름을 [id] 또는 [slug] 로 선언한 뒤 page.js 파일 생성
-- UI 로딩과 스트리밍
+- [UI 로딩과 스트리밍](https://github.com/JunhOpportunity/deep-next/blob/main/routing/5-ui-loading-and-streaming.md)
 > 요약 없음
-- 🤔 에러 핸들링
+- 🤔 [에러 핸들링](https://github.com/JunhOpportunity/deep-next/blob/main/routing/6-error-handling.md)
 > React의 ErrorBoundary 컴포넌트 처럼 에러를 처리할 수 있다.
-- 🤔 병렬적인 경로
+- 🤔 [병렬적인 경로](https://github.com/JunhOpportunity/deep-next/blob/main/routing/7-parallel-path.md)
 > 병렬 라우팅을 사용하면 동일한 레이아웃에서 하나 이상의 페이지를 동시 또는 조건부로 렌더링 할 수 있다.
-- 🤔 경로 가로채기
+- 🤔 [경로 가로채기](https://github.com/JunhOpportunity/deep-next/blob/main/routing/8-intercept-path.md)
 > 어떤 경우에 사용하는지 좀 더 알아보자.
-- 🤔 Route Handler
+- 🤔 [Route Handler](https://github.com/JunhOpportunity/deep-next/blob/main/routing/9-route-handler.md)
 > 라우트 핸들러를 사용하면 요청 및 응답 API를 만들 수 있다. 즉, NextJS에서 백엔드를 구현하는 것이다.
-- 미들웨어
+- [미들웨어](https://github.com/JunhOpportunity/deep-next/blob/main/routing/10-middleware.md)
 > 공통적으로 수행해야 하는 요청에 대해서 한 번에 입구에서 처리하는 기술
-- 💡 프로젝트 구현에 도움이 될만한 것들
+- 💡 [프로젝트 구현에 도움이 될만한 것들](https://github.com/JunhOpportunity/deep-next/blob/main/routing/11-special-addition.md)
 > 요약 없음
