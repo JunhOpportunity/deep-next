@@ -3,6 +3,9 @@
 > 공통적으로 수행해야 하는 요청에 대해서 한 번에 입구에서 처리하는 기술
 > 
 
+![image](https://github.com/JunhOpportunity/deep-next/assets/89464762/5446f491-518d-46a6-aa62-5fde841f4bd0)
+
+
 ## 사용 방법
 
 기본적으로 모든 요청에 대해서 미들웨어를 거친다.
