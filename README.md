@@ -28,3 +28,5 @@
 > 공통적으로 수행해야 하는 요청에 대해서 한 번에 입구에서 처리하는 기술
 - 💡 [프로젝트 구현에 도움이 될만한 것들](https://github.com/JunhOpportunity/deep-next/blob/main/routing/11-special-addition.md)
 > 요약 없음
+- Fetching, Caching, Revalidating
+> 요약 없음
