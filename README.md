@@ -30,3 +30,5 @@
 > 요약 없음
 - Fetching, Caching, Revalidating
 > 요약 없음
+- Fetching 패턴
+> 요약 없음
