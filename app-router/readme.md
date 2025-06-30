@@ -110,3 +110,21 @@ ex) 직렬화 예시
 
 Static 에 해당하는 페이지들은 RSC payload와 JS 번들을 모두 불러오고
 Dynamic 에 해당하는 페이지들은 RSC payload만 프리패칭하고 JS 번들은 향후 실제 페이지 이동이 발생했을 때만 불러온다
+
+## 데이터 패칭
+
+기존에 page-router 방식에서는 getServerSideProps나 getStaticProps 를 통해 props를 자식 컴포넌트에 일일이 넘겨주어야 했는데, 이 방식을 사용하지 않고 서버 컴포넌트를 사용해서 필요한 곳에서 직접 바로 데이터를 가져옴.
+⇒ 비동기 함수를 사용해 fetch한다.
+
+## 쿼리 스트링 전달
+
+> useSearchParams() 를 사용해 전달한다.
+> 
+
+```tsx
+import { useRouter, useSearchParams } from "next/navigation"
+
+const searchParams = useSearchParams();
+const q = searchParams.get("q") // 이전 방식: router.query.q
+```
+
