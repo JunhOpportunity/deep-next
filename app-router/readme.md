@@ -127,4 +127,29 @@ import { useRouter, useSearchParams } from "next/navigation"
 const searchParams = useSearchParams();
 const q = searchParams.get("q") // 이전 방식: router.query.q
 ```
+## 데이터 캐시
 
+> fetch의 두 번째 인자로 옵션을 전달해 사용
+`fetch("api/address”, {cache: “force-cache"})`
+> 
+
+fetch 메서드를 활용해 불러온 데이터를 Next 서버에 보관
+⇒ 불필요한 요청 줄여서 성능 향상 가능
+
+여기서 주의할 점은, Next 에서는 fetch에 cache를 제공하지만 axios 같은 경우에는 제공하지 않는다는 것이다.
+
+- `cache: “no-store”` ⇒ 캐싱 아예 하지 않음. 기본값 (14버전 까지는 캐싱되는 게 기본 값이었다.)
+- `cache: “force-cache"` ⇒ 항상 캐싱함.
+- `next: {revalidate: 3}` ⇒ 특정 시간 주기로 캐시 업데이트함. (마치 ISR 방식)
+- `next: {tags: ['a']}` ⇒ 요청이 들어왔을 때만 캐시 업데이트함.(마치 on-demand ISR 방식)
+
+## 리퀘스트 메모이제이션
+
+> 요청을 기억하고 같은 요청의 경우 해당 요청을 캐싱해 최적화
+한 번의 서버 렌더링 주기 후 초기화된다.
+> 
+
+렌더링이 종료되면 모든 리퀘스트 메모이제이션이 소멸된다.
+따라서 데이터 캐시와는 비슷해보이지만 차이점이 존재한다.
+
+Next 에서 자동으로 적용된다.
